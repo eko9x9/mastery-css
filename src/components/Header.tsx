@@ -18,6 +18,8 @@ const Header: React.FC<Props> = () => {
                     <span className="heading-primary-main">Outdoors</span>
                     <span className="heading-primary-sub">Is where life happens</span>
                 </h1>
+                
+                <a className="btn btn-white btn-animated" href="#">Discover Our Tour</a>
             </div>
         </header>
     )
