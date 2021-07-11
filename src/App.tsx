@@ -1,16 +1,17 @@
-import React, { useEffect } from "react";
-import { Header } from "./lib/index";
-import "./assets/css/index.css"
+import React, { ReactElement } from 'react';
+import "./assets/scss/index.scss"
+import Home from './components/Home';
+import Header from "./layouts/Header"
 
-const App = () => {
-    useEffect(() => {
-        
-    }, [])
-    return ( 
+interface Props {
+    
+}
+
+export default function App({}: Props): ReactElement {
+    return (
         <div>
             <Header />
+            <Home />
         </div>
-    );
-};
-
-export default App;
+    )
+}
