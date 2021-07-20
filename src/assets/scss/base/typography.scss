@@ -1,0 +1,78 @@
+.heading-tertiary {
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.paragraph {
+    font-size: 1.6rem;
+
+    &:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+}
+
+.heading-secondary {
+    font-size: 3rem;
+    font-weight: 700;
+    display: inline-block;
+    text-transform: uppercase;
+    background-image: linear-gradient(to right, #7ed56f, #28b485);
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: all 0.2s;
+    letter-spacing: 0.2rem;
+
+    &:hover{
+        transform: skewY(2deg) skewX(10deg) scale(1.01);
+        text-shadow: .5rem 1rem 2rem rgba(#000000, 0.2);
+    }
+}
+
+.center-text {
+    text-align: center;
+}
+
+.btn-text {
+    &, &:link, &:visited {
+        font-size: 1.6rem;
+        color: green;
+        display: inline-block;
+        text-decoration: none;
+        border-bottom: 1px solid rgb(16, 158, 16);
+        padding: 3px;
+        transition: all .2s;
+        border: none;
+        cursor: pointer;
+        border-radius: 3px;
+    }
+    
+    &:hover {
+        background-color: rgb(16, 158, 16);
+        color: white;
+        box-shadow: .5rem 1rem 2rem rgba(#000000, 0.2);
+    }
+
+    &:active {
+        
+    }
+}
+
+.btn--white {
+    background-color: white;
+}
+
+.btn--green {
+    color: white;
+    background-color: rgb(16, 158, 16);;
+}
+
+
+// u
+.mb-big {
+    margin-bottom: 8rem;
+}
+
+.mb-small {
+    margin-bottom: 1.5rem; 
+}

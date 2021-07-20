@@ -1,0 +1,203 @@
+.card {
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    height: 50rem;
+    transition: all .8s;
+    position: relative;
+    
+    &__side {
+        background-color: rgb(6, 165, 6);
+        color: #fff;
+        font-size: 2rem;
+        height: 50rem;
+        transition: all .8s ease;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        backface-visibility: hidden;
+        border-radius: 3px;
+        overflow: hidden;
+
+        &--front {
+            background-color: white;
+        }
+
+        &--back {
+            color: black;
+            background-color: burlywood;
+            transform: rotateY(180deg);
+        }
+    }
+
+    &:hover &__side--front {    // when card is hover the effect will be effect on card side front
+        transform: rotateY(-180deg);
+    }
+
+    &:hover &__side--back {
+        transform: rotateY(0);
+    }
+
+
+    &__picture {
+        background-size: cover;
+        height: 23rem;
+        background-blend-mode: screen;
+        clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+
+        &--1 {
+            background-image: linear-gradient(
+                to right bottom,
+                rgba(126, 213, 111, 0.7),
+                rgba(40, 180, 131, 0.7)
+            ),  url("../image/salar.jpg");
+        }
+
+        // &--2 {
+        //     background-image: url("../image/salar.jpg");
+        // }
+
+        // &--3 {
+        //     background-image: url("../image/salar.jpg");
+        // }
+    }
+    
+    &__heading {
+        font-size: 2rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        color: #fff;
+        position: absolute;
+        top: 12rem;
+        right: 2rem;
+        text-align: right;
+    }
+
+    &__heading--span {
+        padding: 1rem 1.5rem;
+        box-decoration-break: clone;
+        -webkit-box-direction: clone;
+
+        &--1 {
+            background-image: linear-gradient(to right, #7ed56f, #28b485);
+        }
+    }
+
+    &__details {
+        color: black;
+        ul {
+            list-style: none;
+            width: 80%;
+            margin: 0 auto;
+            li {
+                text-align: center;
+                padding: 1rem;
+                &:not(:last-child){
+                    border-bottom: 1px solid black;
+                }
+            }
+        }
+    }
+
+    &__cta {
+        text-align: center;
+        position: absolute;
+        right: 50%;
+        top: 50%;
+        transform: translate(50%, -50%);
+        width: 90%;
+    }
+
+    &__price--only {
+        font-size: 1.4rem;
+        text-transform: uppercase;
+    }
+
+    &__price {
+        font-size: 6rem;
+        font-weight: 600;
+    }
+}
+
+/* ----------- Galaxy S3 ----------- */
+
+/* Portrait and Landscape */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 2) {
+
+}
+
+/* Portrait */
+@media screen 
+  and (device-width: 320px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 2) 
+  and (orientation: portrait) {
+
+}
+
+/* Landscape */
+@media screen 
+  and (device-width: 320px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 2) 
+  and (orientation: landscape) {
+
+}
+
+/* ----------- Galaxy S4, S5 and Note 3 ----------- */
+
+/* Portrait and Landscape */
+@media screen 
+  and (device-width: 320px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) {
+
+}
+
+/* Portrait */
+@media screen 
+  and (device-width: 320px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) 
+  and (orientation: portrait) {
+
+}
+
+/* Landscape */
+@media screen 
+  and (device-width: 320px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) 
+  and (orientation: landscape) {
+
+}
+
+/* ----------- Galaxy S6 ----------- */
+
+/* Portrait and Landscape */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 4) {
+
+}
+
+/* Portrait */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 4) 
+  and (orientation: portrait) {
+
+}
+
+/* Landscape */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 4) 
+  and (orientation: landscape) {
+}

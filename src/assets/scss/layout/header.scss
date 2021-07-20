@@ -79,14 +79,14 @@ body {
     }
 }
 
-.btn:link, .btn:visited {
+.btn, .btn:link, .btn:visited {
     text-transform: uppercase;
     text-decoration: none;
     padding: 15px 40px;
     display: inline-block;
     border-radius: 100px;
-    position: relative;
-
+    position: relative; 
+    border: none;
     transition: all 0.2s;
 }
 
@@ -97,7 +97,8 @@ body {
 }
 
 /* on button click */
-.btn:active {
+.btn:active, btn:focus {
+    outline: none;
     transform: translateY(-1px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }

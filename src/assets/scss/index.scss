@@ -1,3 +1,11 @@
-@import "./layout/header.scss";
-@import "./grid/grid.scss";
-@import "./pages/home.scss";
+@import "./layout/header";
+@import "./grid/grid";
+@import "./pages/home";
+@import "./base/typography";
+@import "./components/compositions";
+@import "./components/feature-box";
+@import "../linea/_ICONFONT/styles.css";
+@import "./components/card";
+@import "./components/story";
+@import "./components/form";
+@import "./components/footer"
