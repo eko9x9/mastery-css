@@ -1,3 +1,4 @@
+@import "./abstract/mixins";
 @import "./layout/header";
 @import "./grid/grid";
 @import "./pages/home";
@@ -8,4 +9,5 @@
 @import "./components/card";
 @import "./components/story";
 @import "./components/form";
-@import "./components/footer"
+@import "./components/footer";
+@import "./base/base";
